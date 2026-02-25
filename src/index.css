@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  --font-size-base: 16px;
+}
+
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: var(--font-size-base);
+    margin: 0;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 2px;
+}
